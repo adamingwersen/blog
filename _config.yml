@@ -1,14 +1,14 @@
 # Site settings
-title: Clean Blog
+title: Doing things to stuff and vice versa
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-copyright_name: Your/Project/Corporate Name
-description: "Write your site description here. It will be used as your sites meta description as well!"
+email: adamingwersen@mail.com
+copyright_name: Adam Ingwersen
+description: "Well.. It's about data"
 baseurl: "/startbootstrap-clean-blog-jekyll"
-url: "http://yourdomain.com"
-twitter_username: SBootstrap
-github_username:  davidtmiller
-facebook_username:  IronSummitMedia
+url: "http://adamingwersen.github.io"
+twitter_username: adamingwersen
+github_username:  adaminggwersen
+facebook_username:  blockbusterdenmark
 email_username:  your-email@yourdomain.com
 
 # Google Analytics
