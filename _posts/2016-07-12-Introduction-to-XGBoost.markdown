@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "Introduction to XGBoost - TEST!"
-date:   2016-07-13 01:10:05 +0200
-categories: XGBoost, R, Machine Learning
+layout:     page
+title:      "XGBoost"
+subtitle:   "An introduction to Gradient Boosting in R"
+date:       2016-07-13
+author:     "Adam"
+header-img: "img/post-bg-02.jpg"
 ---
 <center><h3> Introduction </h3></center>
 
