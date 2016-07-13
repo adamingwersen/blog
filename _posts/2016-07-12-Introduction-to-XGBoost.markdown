@@ -2,7 +2,7 @@
 layout:     post
 title:      "XGBoost"
 subtitle:   "An introduction to Gradient Boosting in R"
-date:       2016-07-14
+date:       2016-07-13
 author:     "Adam"
 header-img: "img/post-bg-03.jpg"
 ---
