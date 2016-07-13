@@ -1,5 +1,5 @@
 ---
-layout:     post
+layout:     page
 title:      "Building a Static Blog"
 subtitle:   "Using Jekyll and Github Pages."
 date:       2016-07-13
