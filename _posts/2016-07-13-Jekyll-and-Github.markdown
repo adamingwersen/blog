@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Buidling a Static Blog"
+title:      "Building a Static Blog"
 subtitle:   "Using Jekyll and Github Pages."
 date:       2016-07-13
 author:     "Adam"
@@ -24,7 +24,7 @@ Regarding ruby gems. I followed the approach for defining the correct directorie
 
 <center><h3> Deploy the Jekyll </h3></center>
 
-You should install the jekyll gem and go to your desired directory - you should not create a folder for explicitly for this - Jekyll will create a folder named 'yourblog'. 
+You should install the jekyll gem and go to your desired directory - you should not create a folder for explicitly for this - Jekyll will create a folder named `yourblog`. 
 
 ```.sh
 gem install
@@ -49,7 +49,7 @@ This is not public though - that requires just a bit more work.
 If you want to post the site using Github-Pages, you should now do the following:
 
 	1) Log in to Github.com 
-	2) Create new repository - with the same name as 'yourblog'
+	2) Create new repository - with the same name as `yourblog`
 	3) Don't create README.md
 	4) Save the shown URL for your repository somewhere 
 
@@ -63,7 +63,7 @@ nano _config.yml
 For simplicity delete description - this seems to cause some problems with Github when posting.
 
 From here change the field after URL: to `http://yourprofile.github.io`
-Also, change the field after BaseURL: to `/yourblog`. Your _config.yml should look something like this:
+Also, change the field after BaseURL: to `/yourblog`. Your  `_config.yml` should look something like this:
 
 ```yaml
 title: Doing things to stuff and vice versa
@@ -71,7 +71,7 @@ title: Doing things to stuff and vice versa
 email: yourmail@mail.com
 
 baseurl: "/yourblog" # the subpath of your site, e.g. /blog
-url: "http://yourprofile.github.io/" # the base hostname & protocol for your site
+url: "http://yourprofile.github.io" # the base hostname & protocol for your site
 twitter_username: yourtwitteraccount
 github_username:  yourprofile
 
@@ -80,7 +80,7 @@ markdown: kramdown
 ```
 
 
-And yes, it's "kramdown"
+And yes, it's `kramdown`
 
 
 Let's initialize a git repo :
@@ -90,8 +90,8 @@ cd ~/yourdir/yourblog
 git init
 ```
 
-Create a README.md file, make sure that it's in the right place using ls in your current directory. Also, check that a .gitignore file has been created and that it contains: _site, .sass-cache
-and .jekyll-metadata.
+Create a `README.md` file, make sure that it's in the right place using ls in your current directory. Also, check that a `.gitignore` file has been created and that it contains: `_site`, `.sass-cache`
+and `.jekyll-metadata`.
 
 
 ```.sh
