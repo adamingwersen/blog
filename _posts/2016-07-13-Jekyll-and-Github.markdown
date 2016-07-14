@@ -11,7 +11,7 @@ header-img: "img/post-bg-01.jpg"
 
 This guide covers all the necessary steps for launching a blog within 20 minutes on any UNIX-based system. A prerequisite is, that you're somewhat familiar with git and a terminal. You will also need a [Github](https://github.com) account. 
 
-Having watched a few confusing videos on youtube and reading blogposts that did not solve my particular issues with this setup, i decided to do a compliation of the lessons i learned. 
+Having watched a few confusing videos on youtube and reading blogposts that did not solve my particular issues with this setup, I decided to do a compliation of the lessons I learned. 
 
 I'm doing this on a machine running ARCH-linux, where the process for installing ruby relies on the package-manager (pacman) - if you're on Mac/Ubuntu etc. you just have to make sure that you have git and ruby installed with a bundler - and you should not execute this code:
 
@@ -27,6 +27,7 @@ Regarding ruby gems. I followed the approach for defining the correct directorie
 You should install the jekyll gem and go to your desired directory - you should not create a folder for explicitly for this - Jekyll will create a folder named `yourblog`. 
 
 ```.sh
+cd ~/yourdir/
 gem install bundler
 gem install jekyll
 cd ~/yourdir
