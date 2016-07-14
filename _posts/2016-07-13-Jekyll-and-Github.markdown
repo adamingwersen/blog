@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Qucik and Free: Create a blog"
+title:      "Quick and Free: Create a blog"
 subtitle:   "With Jekyll and Github Pages"
 date:       2016-07-12
 author:     "Adam"
@@ -27,7 +27,7 @@ Regarding ruby gems. I followed the approach for defining the correct directorie
 You should install the jekyll gem and go to your desired directory - you should not create a folder for explicitly for this - Jekyll will create a folder named `yourblog`. 
 
 ```.sh
-gem install
+gem install bundler
 gem install jekyll
 cd ~/yourdir
 jekyll new yourblog
@@ -135,6 +135,63 @@ From here you can check out a multititude of tutorials on how to customize layou
 You can clone the repos directly or do a bit of copy/paste into your existing files.
 
 
-<center><h3> Not satisfied? </h3></center>
+<center><h3> Found a theme you like? </h3></center>
+
+Say you found a Jekyll theme you really like. You want your blog to look like that. It's actually really easy to clone a repository and make the necessary adjustments to get it to run on gh-pages. 
+
+This blog for example is simply a lightly retouched copy of the [clean-blog theme](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll). I picked this, because it looked nice and appeared simple in terms of addins etc.
+
+If you're not a html/css/jscript guru - do yourself a favor and pick a simple one. 
+
+I'll use the clean-blog theme for this example. 
+
+Go to the relevant directory on your machine and clone the git repo:
+
+```.sh
+cd ~/yourdir/
+git clone https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll.git
+```
+You can rename the folder.. 
+```.sh
+cd ~/yourdir/
+mkdir yourfolder
+mv ~/yourdir/startbootstrap-clean-blog-jekyll/* ~/yourdir/yourfolder
+```
+
+Be sure, to name the Github repo accordingly. 
+
+Before pushing to your gh-pages, make sure that you change the `_config.yml`, and that's about it. For this theme, you can change the pictures in the `img`-folder. Change the `about.html` and `contact.html` as you like. You can create new markdown files and add them to the `_posts` folder. These follow a strict naming convention: `YYYY-MM-DD-title-sep-like-this.markdown`. 
+
+
+<h4> A side note on ruby gems </h4>
+
+You need to bundle the necessary ruby gems when compiling the blog template. Make sure to have the necessary gems installed:
+
+```.sh
+cd 
+gem install jekyll
+gem install bundler
+cd ~/yourdir/yourfolder
+bundle install
+```
+
+Typically, you will need to activate all the bundles when viewing locally, so instead of just running `jekyll serve`, do this:
+
+```.sh
+bundle exec jekyll serve --watch
+```
+
+
+From here, you can follow the steps from the <b>Get up and Github</b> section - and that's about it. 
+
+
+<center><h3> Want more? </h3></center>
 
 Simply type www.google.com in to your web-browser. 
+
+
+
+
+```.sh
+
+```
