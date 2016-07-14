@@ -8,7 +8,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 
 <center><h3> What are we doing? </h3></center>
-
+<hr>
 This guide covers all the necessary steps for launching a blog within 20 minutes on any UNIX-based system. A prerequisite is, that you're somewhat familiar with git and a terminal. You will also need a [Github](https://github.com) account. 
 
 Having watched a few confusing videos on youtube and reading blogposts that did not solve my particular issues with this setup, I decided to do a compliation of the lessons I learned. 
@@ -31,7 +31,7 @@ sudo apt-get install git-all
 Regarding ruby gems. I followed the approach for defining the correct directories as proposed on the [Archlinux Wiki for Ruby](https://wiki.archlinux.org/index.php/ruby). This should not be necessary on most other operating systems, as the defaults are sufficient. 
 
 <center><h3> Deploy the Jekyll </h3></center>
-
+<hr>
 You should install the jekyll gem and go to your desired directory - you should not create a folder for explicitly for this - Jekyll will create a folder named `yourblog`. 
 
 ```.sh
@@ -54,7 +54,7 @@ This is not public though - that requires just a bit more work.
 
 
 <center><h3> Fix your files </h3></center>
-
+<hr>
 If you want to post the site using Github-Pages, you should now do the following:
 
 	1) Log in to Github.com 
@@ -110,7 +110,7 @@ ls
 
 
 <center><h3> Get up and Github </h3></center>
-
+<hr>
 Now we make sure, that we're not on a master-branch, but rather a gh-pages branch. 
 
 ```.sh
@@ -138,14 +138,14 @@ Go to [Github](https://github.com) and find the repo. Check that the files are c
 Your site shhould be up and running by now - blogposts can be added by writing a post in Markdown and adding it to the `_posts` folder and of course remember; stage, commit, push. 
 
 <center><h3> Okay, but it looks like shit </h3></center>
-
+<hr>
 From here you can check out a multititude of tutorials on how to customize layouts and css etc. I would reccomend taking a look at the [Jekyll Documentation](https://jekyllrb.com/docs/home/) - or maybe you're lazy; just copy one of the many [Jekyll Themes](http://jekyllthemes.org/) and fit to your liking.
 
 You can clone the repos directly or do a bit of copy/paste into your existing files.
 
 
 <center><h3> Found a theme you like? </h3></center>
-
+<hr>
 Say you found a Jekyll theme you really like. You want your blog to look like that. It's actually really easy to clone a repository and make the necessary adjustments to get it to run on gh-pages. 
 
 This blog for example is simply a lightly retouched copy of the [clean-blog theme](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll). I picked this, because it looked nice and appeared simple in terms of addins etc.
