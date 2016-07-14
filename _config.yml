@@ -8,7 +8,7 @@ baseurl: "/startbootstrap-clean-blog-jekyll"
 url: "http://adamingwersen.github.io"
 twitter_username: adamingwersen
 github_username:  adamingwersen
-facebook_username:  blockbusterdenmark
+facebook_username:  adam.ingwersenlinnemann
 email_username:  adamlinnemann@gmail.com
 
 # Google Analytics
@@ -17,7 +17,7 @@ email_username:  adamlinnemann@gmail.com
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
 permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
