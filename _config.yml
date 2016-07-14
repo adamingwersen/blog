@@ -4,7 +4,7 @@ header-img: img/home-bg.jpg
 email: adamingwersen@gmail.com
 copyright_name: Adam Ingwersen
 description: "Well.. It's about data"
-baseurl: "/startbootstrap-clean-blog-jekyll"
+baseurl: "/blog"
 url: "http://adamingwersen.github.io"
 twitter_username: adamingwersen
 github_username:  adamingwersen
