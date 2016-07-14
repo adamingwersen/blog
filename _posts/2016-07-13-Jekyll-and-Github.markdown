@@ -1,8 +1,8 @@
 ---
-layout:     page
-title:      "Building a Static Blog"
-subtitle:   "Using Jekyll and Github Pages."
-date:       2016-07-13
+layout:     post
+title:      "Qucik and Free: Create a blog"
+subtitle:   "With Jekyll and Github Pages"
+date:       2016-07-12
 author:     "Adam"
 header-img: "img/post-bg-01.jpg"
 ---
