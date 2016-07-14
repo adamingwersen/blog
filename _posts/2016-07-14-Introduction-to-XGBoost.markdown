@@ -21,7 +21,7 @@ Having worked to a very limited extent with supervised learning models and predi
 
 The appreviation, <b>XGBoost</b>, stands for Extreme Gradient Boost. It's basically a type of supervised learning algorithm which penalizes a model for both loss in explanatory power and increases in complexity. Each of these terms are contained in the Objective function, which the alogrithm seeks to optimize given the data. 
 
-<center><h3> Libraries: </center></h3>
+<center><h3> Libraries: </h3></center>
 
 ```r
 pkgs <- c("xgboost",
@@ -78,7 +78,7 @@ lapply(pkgs, require, character.only = TRUE)
 ```
 
 
-<center><h3> Sources: </center></h3>
+<center><h3> Sources: </h3></center>
 
 [AnalyticsVidhya](http://www.analyticsvidhya.com/blog/2016/01/xgboost-algorithm-easy-steps/)
 [XGBoost Official Documentation](http://xgboost.readthedocs.io/en/latest/model.html)
