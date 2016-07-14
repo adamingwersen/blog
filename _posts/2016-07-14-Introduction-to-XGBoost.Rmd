@@ -1,10 +1,15 @@
 ---
-title: "<center><h2>Introduction to XGBoost</h2></center>"
-author: "<center><h3>Adam Ingwersen</h3><h4> - Aspiring Data Scientist</h4></center>"
-date: "<center>July 10, 2016</center>"
-output: 
+layout:  _posts/post
+title: "XGBoost"
+comments:  true
+published:  true
+author: "Me"
+date: 2016-07-14
+categories: [R]
+output:
   html_document:
-    keep_md: true
+    mathjax:  default
+    fig_caption:  true
 ---
 <center><h3> Introduction </h3></center>
 The aim of this paper is to self-learn the fundementals of the XGBoost algorithm, how it's implemented in R - and how to apply the package {xgboost} to real data. 
