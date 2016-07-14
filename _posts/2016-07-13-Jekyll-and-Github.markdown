@@ -15,10 +15,18 @@ Having watched a few confusing videos on youtube and reading blogposts that did 
 
 I'm doing this on a machine running ARCH-linux, where the process for installing ruby relies on the package-manager (pacman) - if you're on Mac/Ubuntu etc. you just have to make sure that you have git and ruby installed with a bundler - and you should not execute this code:
 
+<b> Install via pacman - ARCH Linux </b>
 ```.sh
 sudo pacman -S ruby
 sudo pacman -S git
 ```
+
+<b> Install on most UNIX machines </b>
+```.sh
+sudo apt-get install ruby-full
+sudo apt-get install git-all
+```
+<small><i> Please google how to install on your operating system if this doesn't work </i></small>
 
 Regarding ruby gems. I followed the approach for defining the correct directories as proposed on the [Archlinux Wiki for Ruby](https://wiki.archlinux.org/index.php/ruby). This should not be necessary on most other operating systems, as the defaults are sufficient. 
 
@@ -34,7 +42,7 @@ cd ~/yourdir
 jekyll new yourblog
 ```
 
-At this point you already have a functioning framework for a blog:
+At this point you already have a functioning framework for a blog. Please note, if you're using a template, look at the section: <b>Found a theme you like?</b> towards the end of this post.
 
 ```.sh
 jekyll serve
