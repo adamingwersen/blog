@@ -152,7 +152,9 @@ Go to the relevant directory on your machine and clone the git repo:
 cd ~/yourdir/
 git clone https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll.git
 ```
+
 You can rename the folder.. 
+
 ```.sh
 cd ~/yourdir/
 mkdir yourfolder
@@ -189,10 +191,3 @@ From here, you can follow the steps from the <b>Get up and Github</b> section - 
 <center><h3> Want more? </h3></center>
 
 Simply type www.google.com in to your web-browser. 
-
-
-
-
-```.sh
-
-```
