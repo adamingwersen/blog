@@ -17,18 +17,80 @@ Having worked to a very limited extent with supervised learning models and predi
 
 The appreviation, <b>XGBoost</b>, stands for Extreme Gradient Boost. It's basically a type of supervised learning algorithm which penalizes a model for both loss in explanatory power and increases in complexity. Each of these terms are contained in the Objective function, which the alogrithm seeks to optimize given the data. 
 
-<center><h3> Libraries: </center></h3>
-```{r, pkgs}
+<center><h3> Libraries: </h3></center>
+
+{% highlight r %}
 pkgs <- c("xgboost",
           "readr",
           "stringr",
           "caret",
           "car")
 lapply(pkgs, require, character.only = TRUE)
-```
+{% endhighlight %}
 
 
-<center><h3> Sources: </center></h3>
+
+{% highlight text %}
+## Loading required package: xgboost
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: readr
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: stringr
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: caret
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: lattice
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: ggplot2
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: car
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## [[1]]
+## [1] TRUE
+## 
+## [[2]]
+## [1] TRUE
+## 
+## [[3]]
+## [1] TRUE
+## 
+## [[4]]
+## [1] TRUE
+## 
+## [[5]]
+## [1] TRUE
+{% endhighlight %}
+
+
+<center><h3> Sources: </h3></center>
 
 [AnalyticsVidhya](http://www.analyticsvidhya.com/blog/2016/01/xgboost-algorithm-easy-steps/)
 [XGBoost Official Documentation](http://xgboost.readthedocs.io/en/latest/model.html)
