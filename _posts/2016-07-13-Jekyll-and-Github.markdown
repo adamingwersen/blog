@@ -5,6 +5,8 @@ subtitle:   "With Jekyll and Github Pages"
 date:       2016-07-12
 author:     "Adam"
 header-img: "img/post-bg-01.jpg"
+categories:	[About Blogging]
+tags:		[Jekyll]
 ---
 
 <center><h3> What are we doing? </h3></center>

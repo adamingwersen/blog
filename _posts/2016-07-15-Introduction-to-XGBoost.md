@@ -5,6 +5,8 @@ subtitle:   "An introduction to Gradient Boosting in R"
 date:       2016-07-15
 author:     "Adam"
 header-img: "img/post-bg-03.jpg"
+categories:	[About Machine Learning]
+tags:		[R Programming]
 ---
 <center><h3> Introduction </h3></center>
 <hr>
