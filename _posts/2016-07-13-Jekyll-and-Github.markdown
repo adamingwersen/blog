@@ -15,13 +15,13 @@ Having watched a few confusing videos on youtube and reading blogposts that did 
 
 I'm doing this on a machine running ARCH-linux, where the process for installing ruby relies on the package-manager (pacman) - if you're on Mac/Ubuntu etc. you just have to make sure that you have git and ruby installed with a bundler - and you should not execute this code:
 
-<b> Install via pacman - ARCH Linux </b>
+<p><b> Install via pacman - ARCH Linux </b></p>
 ```.sh
 sudo pacman -S ruby
 sudo pacman -S git
 ```
 
-<b> Install on most UNIX machines </b>
+<p><b> Install on most UNIX machines </b></p>
 ```.sh
 sudo apt-get install ruby-full
 sudo apt-get install git-all
