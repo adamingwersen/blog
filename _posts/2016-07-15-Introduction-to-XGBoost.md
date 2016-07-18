@@ -19,19 +19,6 @@ The appreviation, <b>XGBoost</b>, stands for Extreme Gradient Boost. It's basica
 
 <center><h3> Libraries: </h3></center>
 
-{% highlight r %}
-pkgs <- c("xgboost",
-          "readr",
-          "stringr",
-          "caret",
-          "car",
-          "servr",
-          "knitr")
-lapply(pkgs, require, character.only = TRUE)
-{% endhighlight %}
-
-
-
 {% highlight text %}
 ## Loading required package: xgboost
 {% endhighlight %}
