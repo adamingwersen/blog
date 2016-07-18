@@ -2,7 +2,7 @@
 layout:     post
 title:      "XGBoost"
 subtitle:   "An introduction to Gradient Boosting in R"
-date:       2016-07-13
+date:       2016-07-15
 author:     "Adam"
 header-img: "img/post-bg-03.jpg"
 ---
@@ -24,7 +24,9 @@ pkgs <- c("xgboost",
           "readr",
           "stringr",
           "caret",
-          "car")
+          "car",
+          "servr",
+          "knitr")
 lapply(pkgs, require, character.only = TRUE)
 {% endhighlight %}
 
@@ -73,6 +75,18 @@ lapply(pkgs, require, character.only = TRUE)
 
 
 {% highlight text %}
+## Loading required package: servr
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: knitr
+{% endhighlight %}
+
+
+
+{% highlight text %}
 ## [[1]]
 ## [1] TRUE
 ## 
@@ -86,6 +100,12 @@ lapply(pkgs, require, character.only = TRUE)
 ## [1] TRUE
 ## 
 ## [[5]]
+## [1] TRUE
+## 
+## [[6]]
+## [1] TRUE
+## 
+## [[7]]
 ## [1] TRUE
 {% endhighlight %}
 
