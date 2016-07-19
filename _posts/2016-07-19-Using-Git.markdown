@@ -26,10 +26,12 @@ GitHub also allows for cooperation on everything from a school-project to a comp
 Before we get into the essential Git commands, the software needs to be installed. I use Git with GitKraken. 
 
 <b> Arch Linux Install </b>
+
 ```.sh
 sudo pacman -S git
 yaourt gitkraken
 ```
+
 <i> Guide on how to set up yaourt (AUR-package manager) coming </i>
 
 
@@ -56,6 +58,7 @@ git config --global core.editor vim
 ```
 
 If you want to, you can check that you entered the right information by listing the configurations:
+
 ```.sh
 git config --list
 ```
