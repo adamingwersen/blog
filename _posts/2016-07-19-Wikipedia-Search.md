@@ -73,13 +73,20 @@ link_str_replace = function(x, y){
 
 
 links = llply(BTC_WIKI.dates, link_str_replace)
-kable(head(links, 5))
+head(links, 3)
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## Error in kable_markdown(x = structure("http://stats.grok.se/json/en/201607/Bitcoin", .Dim = c(1L, : the table must have a header (column names)
+## [[1]]
+## [1] "http://stats.grok.se/json/en/201607/Bitcoin"
+## 
+## [[2]]
+## [1] "http://stats.grok.se/json/en/201606/Bitcoin"
+## 
+## [[3]]
+## [1] "http://stats.grok.se/json/en/201605/Bitcoin"
 {% endhighlight %}
 
 Now we have a list of viable links. 
@@ -136,18 +143,7 @@ p = ggplot(data = wiki.get.df, aes(x=date, y=log(queries)))
 p = p + geom_line(data = wiki.get.df, aes(y = log(queries)))
 p = p + theme_economist() + scale_color_economist() + 
   labs(x = "Date", y = "Log of Queries", title = "Search Queries for Bitcoin \n on Wikipedia - Daily")
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in eval(expr, envir, enclos): could not find function "theme_economist"
-{% endhighlight %}
-
-
-
-{% highlight r %}
 plot(p)
 {% endhighlight %}
 
-![plot of chunk plot](/blogfigure/source/2016-07-19-Wikipedia-Search/plot-1.png)
+<img src="/blogfigure/source/2016-07-19-Wikipedia-Search/plot-1.png" title="plot of chunk plot" alt="plot of chunk plot" style="display: block; margin: auto;" />
