@@ -4,7 +4,7 @@ title:      "Git: A Tutorial"
 subtitle:   "Track, Revert and Collaborate with Version Control"
 date:       2016-07-19
 author:     "Adam"
-header-img: "img/git-squid.jpg"
+header-img: "img/git-squid.png"
 tags:		[Git | GitKraken | GitHub | Terminal]
 ---
 
@@ -80,8 +80,6 @@ It is important to note, that Git will only track your changes as long as you st
 
 
 <h3><center> Syncing with Github </center></h3>
-
-
 
 
 
