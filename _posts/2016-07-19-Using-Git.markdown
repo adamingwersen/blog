@@ -4,7 +4,7 @@ title:      "Git: A Tutorial"
 subtitle:   "Track, Revert and Collaborate with Version Control"
 date:       2016-07-19
 author:     "Adam"
-header-img: "img/git-squid.png"
+header-img: "img/gource-linux.jpg"
 tags:		[Git | GitKraken | GitHub | Terminal]
 ---
 
