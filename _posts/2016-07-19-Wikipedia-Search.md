@@ -146,4 +146,4 @@ p = p + theme_economist() + scale_color_economist() +
 plot(p)
 {% endhighlight %}
 
-<img src="/blogfigure/source/2016-07-19-Wikipedia-Search/plot-1.png" title="plot of chunk plot" alt="plot of chunk plot" style="display: block; margin: auto;" />
+<img src="img/plot-1.jpg" title="plot of chunk plot" alt="plot of chunk plot" style="display: block; margin: auto;" />
