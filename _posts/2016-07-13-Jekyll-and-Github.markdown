@@ -4,7 +4,7 @@ title:      "Quick and Free: Create a blog"
 subtitle:   "With Jekyll and Github Pages"
 date:       2016-07-12
 author:     "Adam"
-header-img: "img/post-bg-01.jpg"
+header-img: "img/post-blog-pic.jpg"
 tags:		[Blogging | Jekyll | Github | Rails]
 ---
 

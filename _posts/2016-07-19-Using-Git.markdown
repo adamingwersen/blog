@@ -1,0 +1,99 @@
+---
+layout:     post
+title:      "Git: A Tutorial"
+subtitle:   "Track, Revert and Collaborate with Version Control"
+date:       2016-07-19
+author:     "Adam"
+header-img: "img/git-squid.jpg"
+tags:		[Git | GitKraken | GitHub | Terminal]
+---
+
+<center><h3> What is Git? </h3></center>
+<hr>
+Git is a tool that allows anyone to control and manage each version of a file/folder on their computer. It also allows for collaboration with others working on the same project - and easy sharing of any project. 
+
+<center><h3> Git is not Github </h3></center>
+<hr>
+While GitHub is great to use alongside Git, Git has a very different history. Git was originally concieved by (amonsgt others) Linus Torvalds - more famously known for creating the Linux kernel. Back then, Git was constructed in order to facilitate the open soruce development of Linux OS.
+
+GitHub emerged later as a derivative of Git. 
+Today, Git paired with GitHub allows you to display your work online in repositories that serves as an online backup that you can access from any computer. 
+
+GitHub also allows for cooperation on everything from a school-project to a complete web-development framework - like Ruby on Rails. 
+
+<center><h3> Installation </h3></center>
+<hr>
+Before we get into the essential Git commands, the software needs to be installed. I use Git with GitKraken. 
+
+<b> Arch Linux Install </b>
+```.sh
+sudo pacman -S git
+yaourt gitkraken
+```
+<i> Guide on how to set up yaourt (AUR-package manager) coming </i>
+
+
+<b> Install on Ubuntu/OSX etc </b>
+Download [latest Git source package](https://git-scm.com/).
+Download [latest GitKraken](https://www.gitkraken.com/download).
+
+I primarily use GitKraken to track previous changes and browse local repositories.
+
+
+<center><h3> Getting started with Git </h3></center>
+<hr>
+
+Having succesfully installed Git, you're ready to go ahead and set up using the terminal. Configure your credentials - these should not differ from you GitHub profile information, if you already have one. 
+
+```.sh
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+
+# You can set Git to recognize your preferred editor
+# Git takes your systems default editor
+
+git config --global core.editor vim
+```
+
+If you want to, you can check that you entered the right information by listing the configurations:
+```.sh
+git config --list
+```
+
+By now, you're ready to go ahead and initialize a local repository/repo. You do this by setting you current directory to a folder, you would like to keep track of:
+
+```.sh
+cd ~/yourdir/yourfolder
+git init
+```
+
+To check that everything is working as intended, go ahead and add a line to any of the documents in `yourfolder`. From there, you can stage (add) and commit your files.
+
+```.sh
+git add .
+git commit -m 'youfirstcommit-ment/'
+```
+
+Now, you can open GitKraken and press `Ctrl+o`. This will open a Repo - find the repository, you just created and there you go - now you can track changes. 
+
+It is important to note, that Git will only track your changes as long as you stage and commit your files.
+
+
+<h3><center> Syncing with Github </center></h3>
+
+
+
+
+
+
+```.sh
+
+```
+
+```.sh
+
+```
+
+```.sh
+
+```
