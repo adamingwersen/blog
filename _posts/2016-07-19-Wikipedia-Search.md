@@ -4,7 +4,7 @@ title:      "Crawling Wikipedia Search Queries"
 subtitle:   "Using rvest and RJSONIO packages in R"
 date:       2016-07-16
 author:     "Adam"
-header-img: "img/plot-1.jpg"
+header-img: "img/docubyte-purple.jpg"
 tags:		[R Programming | JSON Scraping | Wikipedia | Bitcoin]
 ---
 
@@ -146,4 +146,4 @@ p = p + theme_economist() + scale_color_economist() +
 plot(p)
 {% endhighlight %}
 
-<img src="img/plot-1.jpg"/>
+<img src="home/adam/Documents/Projects/blog/img/plot-1.jpg"/>
