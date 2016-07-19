@@ -36,8 +36,8 @@ yaourt gitkraken
 
 
 <b> Install on Ubuntu/OSX etc </b>
-Download [latest Git source package](https://git-scm.com/).
-Download [latest GitKraken](https://www.gitkraken.com/download).
+<p>Download [latest Git source package](https://git-scm.com/).</p>
+<p>Download [latest GitKraken](https://www.gitkraken.com/download).</p>
 
 I primarily use GitKraken to track previous changes and browse local repositories.
 
@@ -83,18 +83,36 @@ It is important to note, that Git will only track your changes as long as you st
 
 
 <h3><center> Syncing with Github </center></h3>
-
-
-
-
-```.sh
-
-```
+<hr>
+Normally, when pushing your repo to Github, you create a README.md file:
 
 ```.sh
-
+cd ~/yourdir/yourfolder
+touch README.md
 ```
+You can write whatever you find appropriate in this markdown document. This will be displayed on your repo's frontpage on Github and will serve as an introduction to your project. 
+
+On Githubs website, you can easliy "Import Repository", which will import your local repo to Githubs servers and thus be accessible from anywhere with an internet connection. 
+
+If, however, you wish to do this from a terminal, you can do the following. Assuming, that you've created a project on the `master` branch - and that you want to keep it that way:
 
 ```.sh
+cd ~/yourdir/yourfolder
+git checkout -b master
+git remote add origin http://github.com/yourprofile/yourrepo.git
+git push --set upstream origin master
 
+# Or just 
+git push
 ```
+
+That's pretty much how i use Git to keep track and do VC on my local machine. 
+
+<h3><center> What about "Social Coding"? </center></h3>
+<hr>
+
+The social part of Github becomes relevant when doing projects with groups of other individuals. 
+
+You can easily fork, clone or branch out of existing repos, that other users have built. 
+
+If, for example, you discover an awesome project that someone has on Github, and you want to contribute or just use some of the code for your own purposes, you can clone it from the URI/URL provided when clicking the `Clone or download` button on the relevant Github page. 
