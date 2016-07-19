@@ -43,7 +43,7 @@ BTC_WIKI.dates = read_html(wikilink) %>%
 
 
 BTC_WIKI.dates = sapply(seq(from=1, to=nchar(BTC_WIKI.dates), by=6), function(i) substr(BTC_WIKI.dates, i, i+5))
-kable(head(BTC_WIKI.dates, 5))
+head(BTC_WIKI.dates, 3)
 ```
 
 Some dates contain a space at the beginning or end of string, we can fix that by "trimming" the strings:

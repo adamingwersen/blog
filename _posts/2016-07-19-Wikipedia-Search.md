@@ -45,13 +45,13 @@ BTC_WIKI.dates = read_html(wikilink) %>%
 
 
 BTC_WIKI.dates = sapply(seq(from=1, to=nchar(BTC_WIKI.dates), by=6), function(i) substr(BTC_WIKI.dates, i, i+5))
-kable(head(BTC_WIKI.dates, 5))
+head(BTC_WIKI.dates, 3)
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## Error in kable_markdown(x = structure(c("201607", "201606", "201605", : the table must have a header (column names)
+## [1] "201607" "201606" "201605"
 {% endhighlight %}
 
 Some dates contain a space at the beginning or end of string, we can fix that by "trimming" the strings:
@@ -146,4 +146,4 @@ p = p + theme_economist() + scale_color_economist() +
 plot(p)
 {% endhighlight %}
 
-<img src="/blogfigure/source/2016-07-19-Wikipedia-Search/plot-1.png" title="plot of chunk plot" alt="plot of chunk plot" style="display: block; margin: auto;" />
+<img src="figure/source/2016-07-19-Wikipedia-Search/plot-1.png" title="plot of chunk plot" alt="plot of chunk plot" style="display: block; margin: auto;" />
