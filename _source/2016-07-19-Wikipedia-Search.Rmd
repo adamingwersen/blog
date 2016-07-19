@@ -16,7 +16,7 @@ The purpose of this tutorial is to show how to obtain time-series data on any Wi
 
 You need a functioning installation of R with the following packages installed:
 
-```{r, pkgs, echo = FALSE}
+```{r, pkgs, warning = FALSE, message = FALSE}
 pkgs <- c("rvest", 
           "dplyr", 
           "plyr", 
@@ -32,7 +32,7 @@ On [this website](http://stats.grok.se/en), there are some graphs on any and all
 
 The solution is to look into the HTML of the website. All the possible dates are contained within a single css.selector. And given the structure of the link, we can do the following:
 
-```{r, scrp, echo =  FALSE}
+```{r, scrp, warning = FALSE, message = FALSE}
 wikilink = "http://stats.grok.se/en/201601/Bitcoin"
 css.selector = "body > form > #year"
 
@@ -55,7 +55,7 @@ BTC_WIKI.dates = trim(BTC_WIKI.dates)
 Now, we can create links for the crawler. We simply want to iterate over all possible dates in the link while keeping the search-term constant. Given that I'm currently interested in Bitcoins, I set my search-term accordingly:
 
 
-```{r, srch, echo = FALSE}
+```{r, srch, warning = FALSE, message = FALSE}
 
 searchterm = "Bitcoin"
 
@@ -77,7 +77,7 @@ Now we have a list of viable links.
 
 The content on groks.se is formatted as a JSON table. This requires some extra work as the content is nested. Luckily, there's an R-package for that: RJSONIO
 
-```{r, rjson, echo = FALSE}
+```{r, rjson, warning = FALSE, message = FALSE}
 crawl_groks = function(x){
   searchinfo_wiki = fromJSON(x, simplifyMatrix = TRUE, flatten = TRUE)
     get.inf = ldply(searchinfo_wiki$daily_views, data.frame)
@@ -107,7 +107,7 @@ You now have a dataframe consisting of two columns with a daily search-query cou
 
 I used this particular data to do a cointegration analysis alongside Google-Trends data and Real Bitcoin Price/Trade Volume data. For illustration purposes, here's a plot:
 
-```{r, plot, echo = FALSE}
+```{r, plot, warning = FALSE, message = FALSE}
 library(ggplot2)
 p = ggplot(data = wiki.get.df, aes(x=date, y=log(queries)))
 p = p + geom_line(data = wiki.get.df, aes(y = log(queries)))

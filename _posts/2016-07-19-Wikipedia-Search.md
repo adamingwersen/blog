@@ -17,110 +17,14 @@ The purpose of this tutorial is to show how to obtain time-series data on any Wi
 You need a functioning installation of R with the following packages installed:
 
 
-{% highlight text %}
-## Loading required package: rvest
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: xml2
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: dplyr
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## Attaching package: 'dplyr'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: plyr
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## --------------------------------------------------------------------
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## You have loaded plyr after dplyr - this is likely to cause problems.
-## If you need functions from both plyr and dplyr, please load plyr first, then dplyr:
-## library(plyr); library(dplyr)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## --------------------------------------------------------------------
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## Attaching package: 'plyr'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following objects are masked from 'package:dplyr':
-## 
-##     arrange, count, desc, failwith, id, mutate, rename,
-##     summarise, summarize
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: stringr
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: RJSONIO
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: ggthemes
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Warning in library(package, lib.loc = lib.loc, character.only = TRUE,
-## logical.return = TRUE, : there is no package called 'ggthemes'
+{% highlight r %}
+pkgs <- c("rvest", 
+          "dplyr", 
+          "plyr", 
+          "stringr", 
+          "RJSONIO",
+          "ggthemes")
+lapply(pkgs, require, character.only  = TRUE)
 {% endhighlight %}
 
 
@@ -152,6 +56,21 @@ On [this website](http://stats.grok.se/en), there are some graphs on any and all
 The solution is to look into the HTML of the website. All the possible dates are contained within a single css.selector. And given the structure of the link, we can do the following:
 
 
+{% highlight r %}
+wikilink = "http://stats.grok.se/en/201601/Bitcoin"
+css.selector = "body > form > #year"
+
+BTC_WIKI.dates = read_html(wikilink) %>%
+  html_nodes(css = css.selector) %>%
+  html_text(trim = FALSE)
+
+
+BTC_WIKI.dates = sapply(seq(from=1, to=nchar(BTC_WIKI.dates), by=6), function(i) substr(BTC_WIKI.dates, i, i+5))
+kable(head(BTC_WIKI.dates), 5)
+{% endhighlight %}
+
+
+
 {% highlight text %}
 ## Error in eval(expr, envir, enclos): could not find function "kable"
 {% endhighlight %}
@@ -160,6 +79,23 @@ Some dates contain a space at the beginning or end of string, we can fix that by
 
 
 Now, we can create links for the crawler. We simply want to iterate over all possible dates in the link while keeping the search-term constant. Given that I'm currently interested in Bitcoins, I set my search-term accordingly:
+
+
+
+{% highlight r %}
+searchterm = "Bitcoin"
+
+groks.base = "http://stats.grok.se/json/en/LANK/"
+groks.link = paste0(groks.base, searchterm)
+
+link_str_replace = function(x, y){
+  link.replacement = gsub("\\LANK", x, groks.link)
+}
+
+
+links = llply(BTC_WIKI.dates, link_str_replace)
+kable(head(links), 5)
+{% endhighlight %}
 
 
 
@@ -174,6 +110,32 @@ Now we have a list of viable links.
 The content on groks.se is formatted as a JSON table. This requires some extra work as the content is nested. Luckily, there's an R-package for that: RJSONIO
 
 
+{% highlight r %}
+crawl_groks = function(x){
+  searchinfo_wiki = fromJSON(x, simplifyMatrix = TRUE, flatten = TRUE)
+    get.inf = ldply(searchinfo_wiki$daily_views, data.frame)
+  return(cbind(get.inf))
+}
+wiki.jsonget = lapply(links, crawl_groks)
+
+ # Inspecting wiki.get: Nested list of data.frames
+ # This can be combatted by ldply to data.frame
+wiki.get.df = ldply(wiki.jsonget, data.frame)
+
+## Cleaning data ##
+wiki.get.df$date = as.Date(wiki.get.df[,1])                                             # Create new variables 
+wiki.get.df$queries = as.numeric(wiki.get.df[,2])
+
+wiki.get.df$X..i.. = NULL                                                               # Deleting old variables
+wiki.get.df$.id = NULL
+wiki.get.df = wiki.get.df[!(wiki.get.df$queries==0 & wiki.get.df$date>"2010-01-01"),]   # Discard irrelevant dates
+wiki.get.df = na.omit(wiki.get.df)
+
+kable(head(wiki.get.df), 5)
+{% endhighlight %}
+
+
+
 {% highlight text %}
 ## Error in eval(expr, envir, enclos): could not find function "kable"
 {% endhighlight %}
@@ -185,8 +147,24 @@ You now have a dataframe consisting of two columns with a daily search-query cou
 I used this particular data to do a cointegration analysis alongside Google-Trends data and Real Bitcoin Price/Trade Volume data. For illustration purposes, here's a plot:
 
 
+{% highlight r %}
+library(ggplot2)
+p = ggplot(data = wiki.get.df, aes(x=date, y=log(queries)))
+p = p + geom_line(data = wiki.get.df, aes(y = log(queries)))
+p = p + theme_economist() + scale_color_economist() + 
+  labs(x = "Date", y = "Log of Queries", title = "Search Queries for Bitcoin \n on Wikipedia - Daily")
+{% endhighlight %}
+
+
+
 {% highlight text %}
 ## Error in eval(expr, envir, enclos): could not find function "theme_economist"
 {% endhighlight %}
 
-![plot of chunk plot](/blogfigure/source/2016-07-19-Wikipedia-Search/plot-1.png)
+
+
+{% highlight r %}
+plot(p)
+{% endhighlight %}
+
+![plot of chunk plot](figure/source/2016-07-19-Wikipedia-Search/plot-1.png)
