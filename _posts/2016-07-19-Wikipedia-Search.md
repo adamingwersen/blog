@@ -23,30 +23,9 @@ pkgs <- c("rvest",
           "plyr", 
           "stringr", 
           "RJSONIO",
-          "ggthemes")
+          "ggthemes",
+          "knitr")
 lapply(pkgs, require, character.only  = TRUE)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## [[1]]
-## [1] TRUE
-## 
-## [[2]]
-## [1] TRUE
-## 
-## [[3]]
-## [1] TRUE
-## 
-## [[4]]
-## [1] TRUE
-## 
-## [[5]]
-## [1] TRUE
-## 
-## [[6]]
-## [1] FALSE
 {% endhighlight %}
 
 <h3><center> Step One: Create Links </center></h3>
@@ -66,13 +45,13 @@ BTC_WIKI.dates = read_html(wikilink) %>%
 
 
 BTC_WIKI.dates = sapply(seq(from=1, to=nchar(BTC_WIKI.dates), by=6), function(i) substr(BTC_WIKI.dates, i, i+5))
-kable(head(BTC_WIKI.dates), 5)
+kable(head(BTC_WIKI.dates, 5))
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## Error in eval(expr, envir, enclos): could not find function "kable"
+## Error in kable_markdown(x = structure(c("201607", "201606", "201605", : the table must have a header (column names)
 {% endhighlight %}
 
 Some dates contain a space at the beginning or end of string, we can fix that by "trimming" the strings:
@@ -94,13 +73,13 @@ link_str_replace = function(x, y){
 
 
 links = llply(BTC_WIKI.dates, link_str_replace)
-kable(head(links), 5)
+kable(head(links, 5))
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## Error in eval(expr, envir, enclos): could not find function "kable"
+## Error in kable_markdown(x = structure("http://stats.grok.se/json/en/201607/Bitcoin", .Dim = c(1L, : the table must have a header (column names)
 {% endhighlight %}
 
 Now we have a list of viable links. 
@@ -131,14 +110,18 @@ wiki.get.df$.id = NULL
 wiki.get.df = wiki.get.df[!(wiki.get.df$queries==0 & wiki.get.df$date>"2010-01-01"),]   # Discard irrelevant dates
 wiki.get.df = na.omit(wiki.get.df)
 
-kable(head(wiki.get.df), 5)
+kable(head(wiki.get.df, 5))
 {% endhighlight %}
 
 
 
-{% highlight text %}
-## Error in eval(expr, envir, enclos): could not find function "kable"
-{% endhighlight %}
+|date       | queries|
+|:----------|-------:|
+|2016-01-04 |    6170|
+|2016-01-05 |    5844|
+|2016-01-06 |    5145|
+|2016-01-07 |    5827|
+|2016-01-01 |    3202|
 
 You now have a dataframe consisting of two columns with a daily search-query count on any Wikipedia Article. 
 
@@ -167,4 +150,4 @@ p = p + theme_economist() + scale_color_economist() +
 plot(p)
 {% endhighlight %}
 
-![plot of chunk plot](figure/source/2016-07-19-Wikipedia-Search/plot-1.png)
+![plot of chunk plot](/blogfigure/source/2016-07-19-Wikipedia-Search/plot-1.png)

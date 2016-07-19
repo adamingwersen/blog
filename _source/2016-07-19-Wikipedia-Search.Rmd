@@ -16,13 +16,14 @@ The purpose of this tutorial is to show how to obtain time-series data on any Wi
 
 You need a functioning installation of R with the following packages installed:
 
-```{r, pkgs, warning = FALSE, message = FALSE}
+```{r, pkgs, warning = FALSE, message = FALSE, results = 'hide'}
 pkgs <- c("rvest", 
           "dplyr", 
           "plyr", 
           "stringr", 
           "RJSONIO",
-          "ggthemes")
+          "ggthemes",
+          "knitr")
 lapply(pkgs, require, character.only  = TRUE)
 ```
 
@@ -42,7 +43,7 @@ BTC_WIKI.dates = read_html(wikilink) %>%
 
 
 BTC_WIKI.dates = sapply(seq(from=1, to=nchar(BTC_WIKI.dates), by=6), function(i) substr(BTC_WIKI.dates, i, i+5))
-kable(head(BTC_WIKI.dates), 5)
+kable(head(BTC_WIKI.dates, 5))
 ```
 
 Some dates contain a space at the beginning or end of string, we can fix that by "trimming" the strings:
@@ -68,7 +69,7 @@ link_str_replace = function(x, y){
 
 
 links = llply(BTC_WIKI.dates, link_str_replace)
-kable(head(links), 5)
+kable(head(links, 5))
 ``` 
 
 Now we have a list of viable links. 
@@ -98,7 +99,7 @@ wiki.get.df$.id = NULL
 wiki.get.df = wiki.get.df[!(wiki.get.df$queries==0 & wiki.get.df$date>"2010-01-01"),]   # Discard irrelevant dates
 wiki.get.df = na.omit(wiki.get.df)
 
-kable(head(wiki.get.df), 5)
+kable(head(wiki.get.df, 5))
 ```
 
 You now have a dataframe consisting of two columns with a daily search-query count on any Wikipedia Article. 
