@@ -4,7 +4,7 @@ title:      "Crawling Wikipedia Search Queries"
 subtitle:   "Using rvest and RJSONIO packages in R"
 date:       2016-07-16
 author:     "Adam"
-header-img: "img/docubyte-purple.jpg"
+header-img: "img/plot-1.jpg"
 tags:		[R Programming | JSON Scraping | Wikipedia | Bitcoin]
 ---
 
