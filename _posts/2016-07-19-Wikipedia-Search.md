@@ -36,16 +36,16 @@ The solution is to look into the HTML of the website. All the possible dates are
 
 
 {% highlight r %}
-wikilink = "http://stats.grok.se/en/201601/Bitcoin" <br>
-css.selector = "body > form > #year" <br>
+wikilink = "http://stats.grok.se/en/201601/Bitcoin"
+css.selector = "body > form > #year"
 
-BTC_WIKI.dates = read_html(wikilink) %>% <br>
-  html_nodes(css = css.selector) %>% <br>
-  html_text(trim = FALSE) <br>
+BTC_WIKI.dates = read_html(wikilink) %>%
+  html_nodes(css = css.selector) %>%
+  html_text(trim = FALSE)
 
 
-BTC_WIKI.dates = sapply(seq(from=1, to=nchar(BTC_WIKI.dates), by=6), function(i) substr(BTC_WIKI.dates, i, i+5)) <br>
-head(BTC_WIKI.dates, 3) <br>
+BTC_WIKI.dates = sapply(seq(from=1, to=nchar(BTC_WIKI.dates), by=6), function(i) substr(BTC_WIKI.dates, i, i+5))
+head(BTC_WIKI.dates, 3)
 {% endhighlight %}
 
 
@@ -146,4 +146,4 @@ p = p + theme_economist() + scale_color_economist() +
 plot(p)
 {% endhighlight %}
 
-<img src="home/adam/Documents/Projects/blog/img/plot-1.jpg"/>
+<img src="/blogfigure/source/2016-07-19-Wikipedia-Search/plot-1.png" title="plot of chunk plot" alt="plot of chunk plot" style="display: block; margin: auto;" />
