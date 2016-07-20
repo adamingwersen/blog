@@ -36,16 +36,16 @@ The solution is to look into the HTML of the website. All the possible dates are
 
 
 {% highlight r %}
-wikilink = "http://stats.grok.se/en/201601/Bitcoin"
-css.selector = "body > form > #year"
+wikilink = "http://stats.grok.se/en/201601/Bitcoin" <br>
+css.selector = "body > form > #year" <br>
 
-BTC_WIKI.dates = read_html(wikilink) %>%
-  html_nodes(css = css.selector) %>%
-  html_text(trim = FALSE)
+BTC_WIKI.dates = read_html(wikilink) %>% <br>
+  html_nodes(css = css.selector) %>% <br>
+  html_text(trim = FALSE) <br>
 
 
-BTC_WIKI.dates = sapply(seq(from=1, to=nchar(BTC_WIKI.dates), by=6), function(i) substr(BTC_WIKI.dates, i, i+5))
-head(BTC_WIKI.dates, 3)
+BTC_WIKI.dates = sapply(seq(from=1, to=nchar(BTC_WIKI.dates), by=6), function(i) substr(BTC_WIKI.dates, i, i+5)) <br>
+head(BTC_WIKI.dates, 3) <br>
 {% endhighlight %}
 
 
