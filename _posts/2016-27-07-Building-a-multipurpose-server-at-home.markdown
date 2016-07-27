@@ -8,7 +8,7 @@ header-img: "img/servernerd.jpg"
 tags:		[Server | Hardware | SuperMicro | GPU-Computing]
 ---
 
-<h3><center> Why would you want to do that? </center></h3>
+<h2><center> Why would you want to do that? </center></h2>
 Well.. Having primarily worked with statistical programming, I think I could learn a lot from getting down-and-dirty with the hardware. Furthermore, for processing big data, I would like a fast computer to interact with from my Lenovo laptop. The server I'm building will be able to expand heavily by adding more than (possibly) 1TB RAM and extra GPU's and dual CPU's.
 
 Also, the server will be used as a storage facility, backup and I will learn to interact with a Linux server from the bottom up. So; here's a list of reasons that I want to build my own server:
@@ -25,11 +25,11 @@ Accepting that I could probably do something which would be a lot easier if I ju
 
 The budget for the server is set to 10.000 DKK ~ $1478 US. 
 
-<h3><center> The Hardware </center></h3>
+<h2><center> The Hardware </center></h2>
 
 Before setting out the get the hardware, I had to learn a bit about my needs and the compatibility of different parts. As with most DIY computer-projects, you start with selecting an appropriate motherboard:
 
-<h4><center> Picking a Motherboard </center></h4>
+<h3><center> Picking a Motherboard </center></h3>
 
 Having considered my needs, I decided that I wanted a motherboard which allowed for heavy expansion. For a start, I wanted to be able to fit in 2 CPU's. 
 
@@ -51,12 +51,14 @@ It has the following specs, as hihglighted by Supermicro
 8. 5x USB 3.0 (2 rear, 2 via header, 1 Type A), 6x USB 2.0 (2 rear, 4 via header)
 
 
-
 ![The Motherboard](http://imagescdn.tweaktown.com/content/6/7/6780_04_supermicro_x10dri_t_intel_c612_server_motherboard_review.jpg)
 
 
+[Price: $407](https://www.amazon.com/Supermicro-EATX-DDR4-Motherboards-X10DRI-O/dp/B00NGCCKN4/ref=sr_1_2?ie=UTF8&qid=1469618376&sr=8-2&keywords=supermicro+x10dri)
 
-<h4><center> Picking a CPU </center></h4>
+
+
+<h3><center> Picking a CPU </center></h3>
 
 In selecting a CPU for the X10DRi, I focused primarily on Intel Processors. I wanted a compatible processor below $500 US, and would prefer an 8-cores-or-more  Broadwell processor. The motherboard's socket allowed for a R3 LGA2011, Intel Xeon E5 2600-series v3/v4 CPU.
 
@@ -70,7 +72,9 @@ I decided to go with a v4 model as I wanted 2133 TM/s RAM-speed. As mentioned be
 
 I figured, I would not get a 1.7GHz processer, if I was to use the server as an at-home-powerhouse. So the 2620 and 2623 were the last contenders. I used [cpu-world](http://www.cpu-world.com/Compare/406/Intel_Xeon_E5-2620_v4_vs_Intel_Xeon_E5-2623_v4.html) for comparing the CPU's. Given the extra threads and the lower price, i chose the 2620 at $417 US in retail. 
 
-<h4><center> Picking the RAM </center></h4>
+[Price: $435](http://www.newegg.com/Product/ProductList.aspx?Submit=ENE&DEPA=0&Order=BESTMATCH&Description=intel+E5-2620+v4&N=-1&isNodeId=1)
+
+<h3><center> Picking the RAM </center></h3>
 
 Picking RAM is not very difficult. However, when picking RAM for a server-setup one should be aware, that there's something called ECC RAM, which is Error-Correction-Code RAM. Also, server-RAM differs in typically being RDIMM or LRDIMM. I went with the Crucial Brand, as they had an elaborate compatibility guide, [Crucual Advisor Tool](http://www.crucial.com/usa/en/memory-info?cm_re=top-nav-_-flyout-memory-_-us-memory). The processor required the RAM to be, at best 2133 TM/s and DDR4. So i chose accordingly. I went with 2 16GB ECC RDIMM Server RAM Sticks. 
 
@@ -78,19 +82,22 @@ The motherboard has 8 RAM slots, so picking the 2x16GB sticks instead of e.g. 8x
 
 <img align="center" src="http://static.nix.ru/autocatalog/memory_modules_Crucial/198657_3159_draft_large.jpg" rotate="90">
 
+[Price: $170](https://www.amazon.com/Crucial-DDR4-2133-PC4-2133-CT2K16G4RFD4213-CT2C16G4RFD4213/dp/B00KUSMULY/ref=sr_1_2?s=pc&ie=UTF8&qid=1469529789&sr=8-2&keywords=Crucial+32gb+ram+server)
 
-<h4><center> Picking a boot-drive (SSD) </center></h4>
+<h3><center> Picking a boot-drive (SSD) </center></h3>
 
 For booting, you obviously want an SSD. I figured, I wanted to install various software on the server, which is why i wanted the comfort of 256GB. It had to be a SATA3 drive and it had to be quite fast. I picked a Samsung 950 PRO 256GB 2,5-Inch Internatl SSD with 2200MB/S read and 900MB/S write.
 
 ![SSD](http://cdn.pcpartpicker.com/static/forever/images/product/c3080e7c05ad8abee6ca41fea18545dd.256c.jpg)
 
-<h4><center> Picking a Storage drive (HDD)</center></h4>
+[Price: $190](https://www.amazon.com/Samsung-950-PRO-Internal-MZ-V5P256BW/dp/B015SOI392/ref=sr_1_fkmr1_2?ie=UTF8&qid=1469618821&sr=8-2-fkmr1&keywords=samsung+pro+950+25gb)
+
+<h3><center> Picking a Storage drive (HDD)</center></h3>
 I had a 5400 rpm 3TB Western Digital NAS Drive lying around. I figured, I'd use that for a start. 
 
-<h4><center> Cooling </center></h4>
+<h3><center> Cooling </center></h3>
 
-<h5> A Heatsink </h5>
+<h4> A Heatsink </h4>
 
 As this had to run as a 24/7 Server, i wanted to buy a Heatsink for the CPU. I went with one of Intel's that was LGA2011 E5-2600  Compatible. 
 
@@ -98,11 +105,13 @@ As this had to run as a 24/7 Server, i wanted to buy a Heatsink for the CPU. I w
 
 This heatsink requires that the CPU does not exceed 130W and that the chassis is 2U or larger.
 
-<h5> Fansss </h5>
+[Price: $45](https://www.amazon.com/Intel-Solution-Heatsink-Processors-BXSTS200C/dp/B007HJAM50/ref=sr_1_1?ie=UTF8&qid=1469531612&sr=8-1&keywords=intel+xeon+lga2011-3+heat+sink)
+
+<h4> Fansss </h4>
 
 Maybe...
 
-<h4><center> Chassis </center></h4>
+<h3><center> Chassis </center></h3>
 
 Now, there are two major options in terms of selecting a chassis. Either, I choose a chassis with integrated power supply - or I select one, where I need to buy a seperate power supply. 
 
@@ -114,7 +123,9 @@ I will probably go with a generic 4U E-ATX rackable server chassis, like this on
 
 ![Chassis](https://images-na.ssl-images-amazon.com/images/I/41VpsoO5pzL.jpg)
 
-<h4><center> Power Supply </center></h4>
+[Price: $90](https://www.amazon.com/Rosewill-Server-Chassis-Rackmount-Metal/dp/B0056OUTBK/ref=sr_1_1?s=pc&ie=UTF8&qid=1469618904&sr=1-1&keywords=rosewill+8+bay+eatx)
+
+<h3><center> Power Supply </center></h3>
 
 In picking a power-supply for a server, some prefer one with a battery in case of a power outage. I live in Denmark; haven't ever experienced such a thing - and as such, I wont prioritize a battery feature. 
 
@@ -126,18 +137,18 @@ I hit up a bunch of top-20 lists for PSU's and found one that fitted my needs.
 
 At $100 US, the [Corsair RM750x](http://www.newegg.com/Product/Product.aspx?Item=N82E16817139142&nm_mc=AFC-C8Junction&cm_mmc=AFC-C8Junction-VigLink2-_-na-_-na-_-na&cm_sp=&AID=10446076&PID=3821802&SID=ir4rcyl0rq0035wt00053) seemed like an appropriate choice. 
 
-<h4><center> GPU? </center></h4>
+<h3><center> GPU? </center></h3>
 
-<h4><center> Cables and RAID </center></h4>
+<h3><center> Cables and RAID </center></h3>
 
-<h4><center> Budget as we go </center></h4>
+<h3><center> Budget as we go </center></h3>
 
 |Item|Manufacturer|Model|Price in U$D|
 |:--:|:----------:|:---:|:----------:|
 |Motherboard|SuperMicro|X10DRi|$407|
 |CPU|Intel|Xeon E5-2620 v4|$435|
 |RAM|Crucial|CT2K16G4RFD4213|$170|
-|SSD|Samsung|950 Pro|$190|
+|SSD|Samsung|950 Pro 256GB|$190|
 |HDD|Western Digital|3TB RED NAS|$109|
 |Heatsink|Intel|BXSTS200C|$45|
 |PSU|Corsair|RM750x|$100|
