@@ -72,7 +72,7 @@ I figured, I would not get a 1.7GHz processer, if I was to use the server as an 
 
 <h4><center> Picking the RAM </center></h4>
 
-Picking RAM is not very difficult. However, when picking RAM for a server-setup one should be aware, that there's something called ECC RAM, which is Error-Correction-Code RAM. Also, server-RAM differs in typically being RDIMM or LRDIMM. I went with the Crucial Brand, as they had an elaborate compatibility guide. The processor required the RAM to be, at best 2133 TM/s and DDR4. So i chose accordingly. I went with 2 16GB ECC RDIMM Server RAM Sticks. 
+Picking RAM is not very difficult. However, when picking RAM for a server-setup one should be aware, that there's something called ECC RAM, which is Error-Correction-Code RAM. Also, server-RAM differs in typically being RDIMM or LRDIMM. I went with the Crucial Brand, as they had an elaborate compatibility guide, [Crucual Advisor Tool](http://www.crucial.com/usa/en/memory-info?cm_re=top-nav-_-flyout-memory-_-us-memory). The processor required the RAM to be, at best 2133 TM/s and DDR4. So i chose accordingly. I went with 2 16GB ECC RDIMM Server RAM Sticks. 
 
 The motherboard has 8 RAM slots, so picking the 2x16GB sticks instead of e.g. 8x4GB sticks allows me to keep the existing RAM when expanding.
 
@@ -80,6 +80,45 @@ The motherboard has 8 RAM slots, so picking the 2x16GB sticks instead of e.g. 8x
 
 
 <h4><center> Picking a boot-drive (SSD) </center></h4>
+
+For booting, you obviously want an SSD. I figured, I wanted to install various software on the server, which is why i wanted the comfort of 256GB. It had to be a STATA3 drive and it had to be quite fast. I picked a Samsung 850 EVO 256GB 2,5-Inch Internatl SSD with 540MB/S read and write. 
+
+
+<h4><center> Picking a Storage drive (HDD)</center></h4>
+I had a 5400 rpm 3TB Western Digital NAS Drive lying around. I figured, I'd use that for a start. 
+
+<h4><center> Cooling </center></h4>
+
+<h5> A Heatsink </h5>
+
+As this had to run as a 24/7 Server, i wanted to buy a Heatsink for the CPU. I went with one of Intel's that was LGA2011 E5-2600  Compatible. 
+
+![heatsink](https://images-na.ssl-images-amazon.com/images/I/41hrUePQipL.jpg)
+
+This heatsink requires that the CPU does not exceed 130W and that the chassis is 2U or larger.
+
+<h5> Fansss </h5>
+
+Maybe...
+
+<h4><center> Power Supply </center></h4>
+
+In picking a power-supply for a server, some prefer one with a battery in case of a power outage. I live in Denmark; haven't ever experienced such a thing - and as such, I wont prioritize a battery feature. 
+
+I did however need a power supply with a lot of watts if I am to install GPU's on the mobo and it would have to fit with my chassis and E-ATX format. 
+
+We need one with Gold standard, 750W+, silent and below $150 US. 
+
+ 
+<h4><center> Chassis </center></h4>
+
+Now, we
+
+
+
+
+
+
 
 
 
