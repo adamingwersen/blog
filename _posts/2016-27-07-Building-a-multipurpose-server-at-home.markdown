@@ -81,8 +81,9 @@ The motherboard has 8 RAM slots, so picking the 2x16GB sticks instead of e.g. 8x
 
 <h4><center> Picking a boot-drive (SSD) </center></h4>
 
-For booting, you obviously want an SSD. I figured, I wanted to install various software on the server, which is why i wanted the comfort of 256GB. It had to be a STATA3 drive and it had to be quite fast. I picked a Samsung 850 EVO 256GB 2,5-Inch Internatl SSD with 540MB/S read and write. 
+For booting, you obviously want an SSD. I figured, I wanted to install various software on the server, which is why i wanted the comfort of 256GB. It had to be a SATA3 drive and it had to be quite fast. I picked a Samsung 950 PRO 256GB 2,5-Inch Internatl SSD with 2200MB/S read and 900MB/S write.
 
+![SSD](http://cdn.pcpartpicker.com/static/forever/images/product/c3080e7c05ad8abee6ca41fea18545dd.256c.jpg)
 
 <h4><center> Picking a Storage drive (HDD)</center></h4>
 I had a 5400 rpm 3TB Western Digital NAS Drive lying around. I figured, I'd use that for a start. 
@@ -93,7 +94,7 @@ I had a 5400 rpm 3TB Western Digital NAS Drive lying around. I figured, I'd use 
 
 As this had to run as a 24/7 Server, i wanted to buy a Heatsink for the CPU. I went with one of Intel's that was LGA2011 E5-2600  Compatible. 
 
-![heatsink](https://images-na.ssl-images-amazon.com/images/I/41hrUePQipL.jpg)
+![Heatsink](https://images-na.ssl-images-amazon.com/images/I/41hrUePQipL.jpg)
 
 This heatsink requires that the CPU does not exceed 130W and that the chassis is 2U or larger.
 
@@ -101,18 +102,64 @@ This heatsink requires that the CPU does not exceed 130W and that the chassis is
 
 Maybe...
 
+<h4><center> Chassis </center></h4>
+
+Now, there are two major options in terms of selecting a chassis. Either, I choose a chassis with integrated power supply - or I select one, where I need to buy a seperate power supply. 
+
+If I choose the integrated chassis-PSU solution I don't have a lot of options in terms of looks. However the quick-solution provides a tried-and-tested airflow/PSU setup. The cost of a quick-solution is, of course, a bit steeper. 
+
+Having looked at solutions from SuperMicro, which appear nice, I found out that a lot of these require extra fans and are a lot pricier than other options. 
+
+I will probably go with a generic 4U E-ATX rackable server chassis, like this one - and build it into a cupboard or closet.
+
+![Chassis](https://images-na.ssl-images-amazon.com/images/I/41VpsoO5pzL.jpg)
+
 <h4><center> Power Supply </center></h4>
 
 In picking a power-supply for a server, some prefer one with a battery in case of a power outage. I live in Denmark; haven't ever experienced such a thing - and as such, I wont prioritize a battery feature. 
 
 I did however need a power supply with a lot of watts if I am to install GPU's on the mobo and it would have to fit with my chassis and E-ATX format. 
 
-We need one with Gold standard, 750W+, silent and below $150 US. 
+We need one with Gold standard, 750W+, silent and below $150 US.
+
+I hit up a bunch of top-20 lists for PSU's and found one that fitted my needs.
+
+At $100 US, the [Corsair RM750x](http://www.newegg.com/Product/Product.aspx?Item=N82E16817139142&nm_mc=AFC-C8Junction&cm_mmc=AFC-C8Junction-VigLink2-_-na-_-na-_-na&cm_sp=&AID=10446076&PID=3821802&SID=ir4rcyl0rq0035wt00053) seemed like an appropriate choice. 
+
+<h4><center> GPU? </center></h4>
+
+<h4><center> Cables and RAID </center></h4>
+
+<h4><center> Budget as we go </center></h4>
+
+|Item|Manufacturer|Model|Price in U$D|
+|:--:|:----------:|:---:|:----------:|
+|Motherboard|SuperMicro|X10DRi|$407|
+|CPU|Intel|Xeon E5-2620 v4|$435|
+|RAM|Crucial|CT2K16G4RFD4213|$170|
+|SSD|Samsung|950 Pro|$190|
+|HDD|Western Digital|3TB RED NAS|$109|
+|Heatsink|Intel|BXSTS200C|$45|
+|PSU|Corsair|RM750x|$100|
+|Chassis|Rosewill|8-Bays E-ATX 4U|$90|
+|GPU|Nvidia|???|???|
+|Cabling|Assorted|...|$50-$70|
+|||||
+|Total|...|...|$1606|
+
+...So, already we're over the budget...
+
+
+
+
+
+
+
 
  
-<h4><center> Chassis </center></h4>
 
-Now, we
+
+
 
 
 
