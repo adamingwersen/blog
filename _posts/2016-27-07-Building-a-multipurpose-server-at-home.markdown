@@ -2,7 +2,7 @@
 layout:     post
 title:      "Building a home-server for less than 1500 USD"
 subtitle:   "...perhaps a good idea"
-date:       2016-07-16
+date:       2016-07-27
 author:     "Adam"
 header-img: "img/servernerd.jpg"
 tags:		[Server | Hardware | SuperMicro | GPU-Computing]
@@ -18,7 +18,7 @@ Also, the server will be used as a storage facility, backup and I will learn to 
  <li><h6> Play with GPU computing </h6></li>
  <li><h6> Learn Linux Server building</h6></li>
  <li><h6> Practise and set-up with different data-base tools</h6></li>
- <li><h6> Learning about hardware</a></li>
+ <li><h6> Learning about hardware</h6></li>
 </ul>
 
 Accepting that I could probably do something which would be a lot easier if I just wanted extra storage and computing power - I also see this as a learning process from which I will develop a lot of useful knowledge. 
@@ -52,7 +52,7 @@ It has the following specs, as hihglighted by Supermicro
 
 
 
-![The Motherboard](img/supermicro_x10DRi_mobo.jpg)
+![The Motherboard](http://imagescdn.tweaktown.com/content/6/7/6780_04_supermicro_x10dri_t_intel_c612_server_motherboard_review.jpg)
 
 
 
@@ -62,11 +62,25 @@ In selecting a CPU for the X10DRi, I focused primarily on Intel Processors. I wa
 
 I decided to go with a v4 model as I wanted 2133 TM/s RAM-speed. As mentioned before, I wanted to get a low-end Xeon CPU below $500 US in the Intel 2600-series. Therefore, my choiced were limited to the following:
 
-|CPU||Cores/Threads|Operating Speed|Cache|Price|
-|---|:------------:|--------------:|----:|----:|
-|E5-2609 v4 |8/8 |1.7 GHz|22MB|$306|
-|E5-2020 v4 |8/16|3.0 GHz|22MB|$417|
-|E5-2023 v4 |8/8 |3.2 GHZ|11MB|$444|
+|CPU       |Cores/Threads|Operating Speed|Cache|Price|
+|:--------:|:-----------:|:-------------:|:---:|:---:|
+|E5-2609 v4| 8/8 		 |1.7 GHz        |22MB |$306 |
+|E5-2620 v4| 8/16        |3.0 GHz        |22MB |$417 |
+|E5-2623 v4| 8/8 		 |3.2 GHZ        |11MB |$444 |
+
+I figured, I would not get a 1.7GHz processer, if I was to use the server as an at-home-powerhouse. So the 2620 and 2623 were the last contenders. I used [cpu-world](http://www.cpu-world.com/Compare/406/Intel_Xeon_E5-2620_v4_vs_Intel_Xeon_E5-2623_v4.html) for comparing the CPU's. Given the extra threads and the lower price, i chose the 2620 at $417 US in retail. 
+
+<h4><center> Picking the RAM </center></h4>
+
+Picking RAM is not very difficult. However, when picking RAM for a server-setup one should be aware, that there's something called ECC RAM, which is Error-Correction-Code RAM. Also, server-RAM differs in typically being RDIMM or LRDIMM. I went with the Crucial Brand, as they had an elaborate compatibility guide. The processor required the RAM to be, at best 2133 TM/s and DDR4. So i chose accordingly. I went with 2 16GB ECC RDIMM Server RAM Sticks. 
+
+The motherboard has 8 RAM slots, so picking the 2x16GB sticks instead of e.g. 8x4GB sticks allows me to keep the existing RAM when expanding.
+
+<img align="center" src="http://static.nix.ru/autocatalog/memory_modules_Crucial/198657_3159_draft_large.jpg" rotate="90">
+
+
+<h4><center> Picking a boot-drive (SSD) </center></h4>
+
 
 
 
