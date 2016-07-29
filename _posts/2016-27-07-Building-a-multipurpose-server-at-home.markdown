@@ -73,12 +73,12 @@ In selecting a CPU for the X10SRA, I focused only on Intel Processors. I wanted 
 
 I decided to go with a v4 model as I wanted 2133 TM/s RAM-speed. As mentioned before, I wanted to get a low-end Xeon CPU below $500 US in the Intel 1600/2600-series. Therefore, my choices were limited to the following:
 
-|CPU       |Cores/Threads|Operating Speed|Cache|Price|
-|:--------:|:-----------:|:-------------:|:---:|:---:|
-|E5-1620 v4| 4/8 		 |3.5 GHz        |10MB |$297 |
-|E5-1630 v4| 4/8 		 |3.7 GHz        |10MB |$406 |
-|E5-2620 v4| 8/16        |3.0 GHz        |22MB |$417 |
-|E5-2623 v4| 8/8 		 |3.2 GHZ        |11MB |$444 |
+|CPU       |Cores/Threads|Base   |Turbo   |Cache|Price|
+|:--------:|:-----------:|:-----:|:------:|:---:|:---:|
+|E5-1620 v4| 4/8 		 |3.5 GHz|3.8 GHz |10MB |$297 |
+|E5-1630 v4| 4/8 		 |3.7 GHz|4.0 GHz |10MB |$406 |
+|E5-2620 v4| 8/16        |2.1 GHz|3.0 GHz |22MB |$417 |
+|E5-2623 v4| 8/8 		 |2.6 GHz|3.2 GHZ |11MB |$444 |
 
  I used [cpu-world](http://www.cpu-world.com/Compare/406/Intel_Xeon_E5-2620_v4_vs_Intel_Xeon_E5-1620_v4.html) for comparing the CPU's. Given the extra threads and the lowest power consumption, i chose the 2620 at a bit steeper price than the 1600's. 
 

@@ -116,3 +116,5 @@ The social part of Github becomes relevant when doing projects with groups of ot
 You can easily fork, clone or branch out of existing repos, that other users have built. 
 
 If, for example, you discover an awesome project that someone has on Github, and you want to contribute or just use some of the code for your own purposes, you can clone it from the URI/URL provided when clicking the `Clone or download` button on the relevant Github page. 
+
+These are the basics, that you'll need to know in order to get started with Git and Github on your PC. You can expand your knowledge of branches and more advanced features on the various blogs covering these topics. 
