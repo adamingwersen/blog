@@ -123,7 +123,7 @@ Here are the specs of the drive:
 
 <h2><center> Cooling </center></h2>
 
-As this had to run as a 24/7 Server, i wanted to buy a CPU Cooler/Heatsink for the CPU. I went with one of Noctua's that was LGA2011 E5-2600 compatible. I was initially concerned about the size of the fan and went with the smallest in the NH-series, the NH-D9L. I picked Noctua simply because of the amount of positive reviews about the brand and their supposedly pseudo-silent air-cooling.
+As this had to run as a 24/7 Server, I wanted to buy a Cooler/Heatsink for the CPU. I went with one of Noctuas that was LGA2011 E5-2600 compatible. I was initially concerned about the size of the fan and went with the smallest in the NH-series, the NH-D9L. I picked Noctua simply because of the amount of positive reviews about the brand and their supposedly pseudo-silent air-cooling.
 
 I went with air-cooling for this setup instead of liquid-cooling as I was not aiming for overclocking the CPU - also, for simplicity and risk-aversion.
 
