@@ -12,7 +12,7 @@ tags:		[Server | Hardware | SuperMicro|Linux Server]
 This post is about me building a server. I have never built a computer before and have little experience with computer hardware. Google = Sensei. 
 
 <h2><center> Why would you want to do that? </center></h2>
-Well.. Having primarily worked with statistical programming, I think I could learn a lot from getting down-and-dirty with the hardware. Furthermore, for processing big data, I would like a fast computer to interact with from my Lenovo laptop. The server I'm building will be able to expand heavily by adding more than (possibly) 500GB RAM and extra GPU's and Xeon CPU's.
+Well.. Having primarily worked with statistical programming, I think I could learn a lot from getting down-and-dirty with the hardware. Furthermore, for processing big(-ger) data, I would like a fast computer to interact with from my Lenovo laptop. The server I'm building will be able to expand heavily by adding more than (possibly) 512GB RAM and extra GPU's and a singleXeon CPU.
 
 Also, the server will be used as a storage facility, backup and I will learn to interact with a Linux server from the bottom up. So; here's a list of reasons that I want to build my own server:
 
@@ -32,9 +32,9 @@ Before setting out the get the hardware, I had to learn a bit about my needs and
 
 <h2><center> Picking a Motherboard </center></h2>
 
-Having considered my needs, I decided that I wanted a motherboard which allowed for heavy expansion. For a start, I wanted to be able to fit in one v4 Xeon CPU. 
+Having considered my needs, I decided that I wanted a motherboard which allowed for some expansion. For a start, I wanted to be able to fit in one v4 Xeon CPU. 
 
-Having studied a couple of blog-posts, I decided on a manufacturer for a Uni-Socket Motherboard. [Supermicro](https://www.supermicro.nl/index.cfm) appeared to be one of the better suppliers of such a product. Starting out, I wanted a X10 structure in an ATX format that would fit into a Mid-Tower chassis with at least 2 x16 PCIE Slots. I wanted a LGA 2011-3 structure, which allows for the newer, larger CPU's. Looking around the supermicro-site my choices were many, but concidering price - i decided on the X10SRA-series. 
+Having studied a couple of reviews and blog-posts, I decided on a manufacturer for a Uni-Socket Motherboard. [Supermicro](https://www.supermicro.nl/index.cfm) appeared to be one of the better suppliers of such a product. Starting out, I wanted a X10 structure in an ATX format that would fit into a Mid-Tower chassis with at least 2 x16 E-PCI Slots. I wanted a LGA 2011-3 socket-format, which allows for the newer, larger CPU's. Looking around Supermicro's website the options were many, but concidering price - I decided on the X10SRA. 
 
 It has the following specs, as hihglighted by Supermicro
 
@@ -69,7 +69,7 @@ This board allows for 4 PCI-E ports, and has 10 SATA ports as well as 8 DIMM slo
 
 <h2><center> Picking a CPU </center></h2>
 
-In selecting a CPU for the X10SRA, I focused only on Intel Processors. I wanted a compatible processor below $500 US, and would prefer an 6-cores-or-more  Broadwell processor. The motherboard's socket allowed for a R3 LGA2011, Intel Xeon E5 1600/2600-series v3/v4 CPU.
+In selecting a CPU for the X10SRA, I focused only on Intel Processors. I wanted a compatible processor below $500 US, and would prefer a 6-cores-or-more  Broadwell processor. The motherboard's socket allowed for a R3 LGA2011, Intel Xeon E5 1600/2600-series v3/v4 CPU.
 
 I decided to go with a v4 model as I wanted 2133 TM/s RAM-speed. As mentioned before, I wanted to get a low-end Xeon CPU below $500 US in the Intel 1600/2600-series. Therefore, my choices were limited to the following:
 
@@ -80,7 +80,9 @@ I decided to go with a v4 model as I wanted 2133 TM/s RAM-speed. As mentioned be
 |E5-2620 v4| 8/16        |2.1 GHz|3.0 GHz |22MB |$417 |
 |E5-2623 v4| 8/8 		 |2.6 GHz|3.2 GHZ |11MB |$444 |
 
- I used [cpu-world](http://www.cpu-world.com/Compare/406/Intel_Xeon_E5-2620_v4_vs_Intel_Xeon_E5-1620_v4.html) for comparing the CPU's. Given the extra threads and the lowest power consumption, i chose the 2620 at a bit steeper price than the 1600's. 
+ I used [cpu-world](http://www.cpu-world.com/Compare/406/Intel_Xeon_E5-2620_v4_vs_Intel_Xeon_E5-1620_v4.html) for comparing the CPU's. This site is awesome, as you can adjust the comparison CPU's directly in the URL - although only a 1-by-1 comparison at a time.
+
+ Given the extra threads and the lowest power consumption, i chose the 2620 at a bit higher pricepoint than the 1600's. But with double the cores - and a lower power consumption of 85W compared to 140W.
 
 <center><img src="http://images10.newegg.com/productimage/19-117-629-03.jpg"></center>
 
@@ -90,9 +92,9 @@ I decided to go with a v4 model as I wanted 2133 TM/s RAM-speed. As mentioned be
 
 <h2><center> Picking the RAM </center></h2>
 
-Picking RAM is not very difficult. However, when picking RAM for a server-setup one should be aware, that there's something called ECC RAM, which is Error-Correction-Code RAM. Also, server-RAM differs in typically being RDIMM or LRDIMM. I went with the Crucial Brand, as they had an elaborate compatibility guide, [Crucual Advisor Tool](http://www.crucial.com/usa/en/memory-info?cm_re=top-nav-_-flyout-memory-_-us-memory). The processor required the RAM to be, at best 2133 TM/s and DDR4. So i chose accordingly. I went with 2 16GB ECC RDIMM Server RAM Sticks. 
+Picking RAM is not very difficult. However, when picking RAM for a server-setup one should be aware, that there's something called ECC RAM, which is Error-Correction-Code RAM. Also, server-RAM differs in typically being RDIMM or LRDIMM. I went with the Crucial Brand, as they had an elaborate compatibility guide, [Crucial Advisor Tool](http://www.crucial.com/usa/en/memory-info?cm_re=top-nav-_-flyout-memory-_-us-memory). The processor required the RAM to be, at best 2133 TM/s and DDR4. So i chose accordingly. I went with 2 16GB ECC RDIMM Server RAM Sticks. 
 
-The motherboard has 8 RAM slots, so picking the 2x16GB sticks instead of e.g. 8x4GB sticks allows me to keep the existing RAM when expanding.
+The motherboard has 8 RAM slots, so picking the 2x16GB sticks instead of e.g. 8x4GB sticks allows me to keep these existing RAM when expanding - and not being required to replace any RAM in the near future.
 
 <center><img src="http://images17.newegg.com/is/image/newegg/20-148-840-Z01?$S640$"></center>
 
@@ -102,7 +104,7 @@ The motherboard has 8 RAM slots, so picking the 2x16GB sticks instead of e.g. 8x
 
 <h2><center> Picking a boot-drive (SSD) </center></h2>
 
-For booting, you obviously want an SSD. I figured, I wanted to install various software on the server, which is why i wanted the comfort of 256GB. It had to be a SATA3 drive and it had to be quite fast. I picked a Samsung 850 PRO 256GB 2,5-Inch Internatl SSD with 550MB/S read and 520MB/S write. This SSD has V-NAND, which, to my knowledge is ideal for more standby time and enterprise grade usage.
+For booting, you obviously want an SSD. I figured, I wanted to install various software on the server, which is why i wanted the comfort of 256GB. It had to be a SATA3 drive and it had to be quite fast. I picked a Samsung 850 PRO 256GB 2,5-Inch Internatl SSD with 550MB/S read and 520MB/S write. This SSD has V-NAND, which, to my knowledge is ideal for more standby time and intended for enterprise-grade usage.
 
 <center><img src="http://images10.newegg.com/productimage/A12K_131111183232863646EctktGWr53.jpg"></center>
 
