@@ -27,6 +27,6 @@ local({
       base.url = 'http://adamingwersen.github.io/blog'
     )
   }
-  knitr::opts_knit$set(width = 70)
+  knitr::opts_knit$set(width = 11)
   knitr::knit(a[1], a[2], quiet = TRUE, encoding = 'UTF-8', envir = .GlobalEnv)
 })

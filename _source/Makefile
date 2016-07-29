@@ -3,3 +3,6 @@ all:
 
 clean:
 	rm -r ../_site
+kramdown:
+  input: GFM
+  hard_wrap: false

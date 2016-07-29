@@ -170,4 +170,20 @@ The costs of the components considered thus far. I would like to eventually affo
 |<b>Total</b>|               |               |<b>$1325</b>|
 
 
+<h2><center> Wait, no GPU's? </center></h2>
+
+For now, no. 
+
+This is because: 
+
+Proper GPU's for parrallel computing such as the enterprise-grade GPU's from NVIDIA: Quadro or Tesla. These are insanely expensive. Such GPU's are optimized for machine learning tasks and are powering the largest neural networks around the globe. This may indeed be overkill.
+
+Obviously, one could aim for lower grade gaming GPU's, which would be well fitted for the sorts of tasks, I would be throwing at my server. 
+
+Also, GPU's are power-hungry and they get hot. So the setup will require a power supply with higher wattage - and more fans. For a start, this rack will not be utilizing a GPU until I have at least $800-1000 more to spend.
+
+<h2><center> What now? </center></h2>
+
+
+
 The next part of this series will be concerned with assembly of the server and making it run Linux Server.

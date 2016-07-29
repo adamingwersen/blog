@@ -51,7 +51,9 @@ head(BTC_WIKI.dates, 3)
 
 
 {% highlight text %}
-## [1] "201607" "201606" "201605"
+## [1] "201607"
+## [2] "201606"
+## [3] "201605"
 {% endhighlight %}
 
 Some dates contain a space at the beginning or end of string, we can fix that by "trimming" the strings:
