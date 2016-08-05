@@ -4,7 +4,7 @@ title:      "Build a multipurpose Linux server at home for less than $1500"
 subtitle:   "Part 2: Choosing Linux Distro and DB"
 date:       2016-07-27
 author:     "Adam"
-header-img: "img/servertangle.jpg"
+header-img: "img/docubyte_and_ink_teal2.jpg"
 tags:		[Server | Hardware | SuperMicro|Linux Server]
 ---
 <h1><center> Part 2: Choosing Linux Distro and DB </center></h1>

@@ -19,8 +19,10 @@ Having worked to a very limited extent with supervised learning models and predi
 <center><h3> What is XGBoost - and how is it commonly applied? </h3></center>
 <hr>
 
-The appreviation, <b>XGBoost</b>, stands for Extreme Gradient Boost. It's basically a type of supervised learning algorithm which penalizes a model for both loss in explanatory power and increases in complexity. Each of these terms are contained in the Objective function, which the alogrithm seeks to optimize given the data. 
+The abbreviation, <b>XGBoost</b>, stands for Extreme Gradient Boost. It's basically a type of supervised learning algorithm which penalizes a model for both loss in explanatory power and increases in complexity. Each of these terms are contained in the Objective function, which the alogrithm seeks to optimize given the data. 
 
+The XGBoost has been implemented effficiently in R within the `xgboost` package. The framework can be scaled and has been used in winning multiple [Kaggle](https://kaggle.com) competitions
+.
 <center><h3> Which concepts do I need to understand before delving into Extreme Gradient Boosting? </h3></center>
 <hr>
 
