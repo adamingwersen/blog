@@ -4,7 +4,7 @@ title:      "Copenhagen"
 subtitle:   "A locals guide"
 date:       2016-08-20
 author:     "Adam"
-header-img: "img/copenhagenviewjpg"
+header-img: "img/copenhagenview.jpg"
 tags:		[Copenhagen | AirBnB | Vesterbro ]
 ---
 
