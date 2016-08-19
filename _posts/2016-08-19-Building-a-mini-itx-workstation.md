@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Building a Mini-ITX Workstation
+title:      "Building a Mini-ITX Workstation"
 subtitle:   "A Simple Walkthrough"
 date:       2016-08-19
 author:     "Adam"
