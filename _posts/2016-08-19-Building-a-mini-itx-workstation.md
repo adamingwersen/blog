@@ -7,3 +7,4 @@ author:     "Adam"
 header-img: "img/phanteks_miniitx.jpg"
 tags:		[Hardware | Workstation | Linux | Mini-ITX | Phanteks]
 ---
+
