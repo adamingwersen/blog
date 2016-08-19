@@ -4,7 +4,7 @@ title:      "Building a Mini-ITX Workstation"
 subtitle:   "A Simple Walkthrough"
 date:       2016-08-19
 author:     "Adam"
-header-img: "img/phantkes_miniitx.jpg"
+header-img: "img/phanktes_miniitx.jpg"
 tags:		[Hardware | Workstation | Linux | Mini-ITX | Phanteks]
 ---
 
