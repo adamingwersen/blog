@@ -129,7 +129,7 @@ In my opinion, Nørrebro is the place to go for top-of-the-line shawarma. In par
 
 If you're more into shish, I recommend Kösk Kebab on Frederiksundsvej - a bit further North from Nørrebrogade. 
 
-<center><img src="hhttp://www.kosk.dk/images/slide-2.jpg
+<center><img src="http://www.kosk.dk/images/slide-2.jpg
 "></center>
 
 <h2><center>Danish Hotdog</center></h2>
