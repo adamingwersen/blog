@@ -12,7 +12,10 @@ tags:		[Copenhagen | AirBnB | Vesterbro ]
 <hr>
 We welcome you to our centrally located apartment. We really want you to have a good time whilst in Copenhagen, so we decided to write a guide on where to go in Copenhagen. We hope, you'll enjoy your stay and find this guide somewhat helpful. 
 
-Copenhagen is split into 6 districts: København V(Vesterbro), København S(Amager), København K(Centrum), København Ø(Østerbro), København N(Nørrebro) and Frederiksberg. 
+Copenhagen is split into 6 districts: København V(Vesterbro), København S (Amager), København K (Centrum), København Ø (Østerbro), København N (Nørrebro) and Frederiksberg. 
+
+<center><img src="http://www.itu.dk/~vict/KSFL/leksehjelp/img/Kort.png"></center>
+
 
 This guide will only be concerned with Vesterbro and everything within the close vicinity of the aparment. I strongly urge anyone visiting to see Christianshavn (Christiania), Nyhavn and Nørrebro. 
 
