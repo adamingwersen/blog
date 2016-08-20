@@ -46,6 +46,7 @@ Everything on this list is within walking distance from the Apartment.
 |:------------:|:--:|:---:|
 |[Lidkoeb](http://lidkoeb.dk/)|Cocktail| ~100DKK|
 |[Mikeller](http://mikkeller.dk/location/mikkeller-bar-viktoriagade-copenhagen/)|Craft Beer| ~60DKK|
+|[Bakken](http://bakkenkbh.dk/)| TexMex by Day - Club at night| ~50DKK|
 
 
 <h2><center>Where to Eat</center></h2>
