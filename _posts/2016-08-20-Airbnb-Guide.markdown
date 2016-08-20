@@ -110,6 +110,8 @@ If you get excited about art and are up for a 1hr train-ride. This museum has so
 
 <center><img src="http://womeninjordan.org/en/wp-content/uploads/515x257-9.jpg"></center>
 
+[Current exhibitions at Louisiana](https://en.louisiana.dk/exhibitions/current)
+
 <hr>
 
 
