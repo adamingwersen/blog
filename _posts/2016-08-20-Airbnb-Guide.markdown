@@ -71,6 +71,8 @@ It's a given if you're visiting in the summer and haven't already been.
 
 <center><img src="http://a.bimg.dk/node-images/771/3/800x600-u/3771306-tivoli_om_natten_torben_christensenjpg.jpg"></center>
 
+<hr>
+
 <h3><center>Christiania</center></h3>
 
 <center><img src="http://denstoredanske.dk/@api/deki/files/98018/=Christiania_indgang.jpg"></center>
@@ -87,21 +89,28 @@ I would adivce taking a walk around the lakes and look at all the hand-built res
 
 <center><img src="http://wikitravel.org/upload/shared//a/aa/Christiania_Banner.jpg"></center>
 
+<hr>
 
 <h3><center>Frederiksberg Zoo</center></h3>
 Zoo on top of a hill. Yes, this is the place where they fed the Giraffe to the lions in front of kids.
 
 <center><img src="http://viden.jp.dk/binaries/540/3849.jpg"></center>
 
+<hr>
+
 <h3><center>Den blå planet (Blue Planet)</center></h3>
 Brand new. With a walk-through aquarium.
 
 <center><img src="http://ekstrabladet.dk/migration_catalog/NICA/article4482625.ece/IMAGE_ALTERNATES/p900/Rundvisning_i_Den_B_911062a.jpg"></center>
 
+<hr>
+
 <h3><center>Lousiana Museum of Modern Art</center></h3>
 If you get excited about art and are up for a 1hr train-ride. This museum has some awesome exhibitions, a kids-specific area (they can draw, paint and sculpt themselves - altough it probably won't be showcased) and is right by the water. 
 
 <center><img src="http://womeninjordan.org/en/wp-content/uploads/515x257-9.jpg"></center>
+
+<hr>
 
 
 
