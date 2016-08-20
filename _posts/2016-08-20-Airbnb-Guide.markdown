@@ -71,6 +71,23 @@ It's a given if you're visiting in the summer and haven't already been.
 
 <center><img src="http://a.bimg.dk/node-images/771/3/800x600-u/3771306-tivoli_om_natten_torben_christensenjpg.jpg"></center>
 
+<h3><center>Christiania</center></h3>
+
+<center><img src="http://denstoredanske.dk/@api/deki/files/98018/=Christiania_indgang.jpg"></center>
+
+Christiania has roots in the 60's hippie-movement and was constructed as a free-city inside Copenhagen. Today it serves as one of Copenhagens main tourist attractions. However, many people still live here. In Christiania there are live concerts, arts-shops and of course booths where marijuana can be purchased very easily.
+
+
+Just to be clear: Distribution of marijuana and hashish is illegal in Denmark - but it's seldomly enforced. It's commonplace to smoke a joint in public areas; just don't do it in front of police officers. 
+
+Even if you're not interested in consuming marijuana, it's worth a visit due to it's cultural history, diverse inhabitants, quaint cafés and restaurants. 
+
+I would adivce taking a walk around the lakes and look at all the hand-built residences - some of which are very interesting.
+
+
+<center><img src="http://wikitravel.org/upload/shared//a/aa/Christiania_Banner.jpg"></center>
+
+
 <h3><center>Frederiksberg Zoo</center></h3>
 Zoo on top of a hill. Yes, this is the place where they fed the Giraffe to the lions in front of kids.
 
