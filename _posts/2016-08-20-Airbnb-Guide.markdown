@@ -118,6 +118,43 @@ If you get excited about art and are up for a 1hr train-ride. This museum has so
 
 <hr>
 
+<h2><center>Shawarma</center></h2>
+<hr>
+
+Shawarma is different throughout european cities. Copenhagen Shawarma is distinctive in it's usage of ingredients like feta, pickled red cabbage and it's fixation on the meat itself. 
+
+<center><img src="https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11371163_1056012021122717_1810909802_n.jpg"></center>
+
+In my opinion, Nørrebro is the place to go for top-of-the-line shawarma. In particular I recommend Dürum Bar and Kösem, both on Nørrebrogade. 
+
+If you're more into shish, I recommend Kösk Kebab on Frederiksundsvej - a bit further North from Nørrebrogade. 
+
+<center><img src="hhttp://www.kosk.dk/images/slide-2.jpg
+"></center>
+
+<h2><center>Danish Hotdog</center></h2>
+
+The classic danish hotdog is usually prepared with a roasted sausage, thick ketchup, mustard, remoulade (mayonnaise + pickles), fried onions and sliced gherkins.
+
+<center><img src="https://media-cdn.tripadvisor.com/media/photo-s/09/a2/ca/cf/doep.jpg
+"></center>
+
+There are a lot of organic variations on this, but the best classic one is found on the Tivoli-side of Copenhagen Central Station. 
+
+<h2><center>Smørrebrød</center></h2>
+
+This open-faced sandwich on rye-bread with various toppings is the staple of traditional danish food. It's been getting a lot of attention as of late - and as such it has been altered and modernised; for the better. Smørrebrød is not a eat-as-you-go sort of food - you are required to sit down in order to consume it. It is also traditionally accompanied by snaps. 
+
+The best modern option is [Aamanns](http://www.aamanns.dk/)
+
+<center><img src="http://www.aamanns.dk/media/uploads/images/favoritterne-forside.jpg
+"></center>
+
+The best classic option is [Schønemann](http://www.restaurantschonnemann.dk/)
+
+<center><img src="http://www.miraarkin.dk/wp-content/uploads/2012/02/P1230388_s.jpg?2856a0
+"></center>
+
 
 
 
