@@ -25,7 +25,7 @@ Best bang-for-the-buck 4-core Skylake CPU.
 
 <hr>
 
-<h1>><center>RAM</center></h1>
+<h1><center>RAM</center></h1>
 
 A single 16GB RAM Stick. White.
 

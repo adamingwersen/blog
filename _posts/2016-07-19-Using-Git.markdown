@@ -36,8 +36,8 @@ yaourt gitkraken
 
 
 <b> Install on Ubuntu/OSX etc </b>
-<p>Download [latest Git source package](https://git-scm.com/).</p>
-<p>Download [latest GitKraken](https://www.gitkraken.com/download).</p>
+<p>Download [latest Git source package](https://git-scm.com/)</p>
+<p>Download [latest GitKraken](https://www.gitkraken.com/download)</p>
 
 I primarily use GitKraken to track previous changes and browse local repositories.
 
