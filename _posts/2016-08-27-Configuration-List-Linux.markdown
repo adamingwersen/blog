@@ -27,6 +27,7 @@ tags:		[Ubuntu | Fedora | Arch/Antergos]
  <li><h4> R + Rstudio </h4></li>
  <li><h4> PSensor </h4></li>
  <li><h4> R + Rstudio </h4></li>
+ <li><h4> Git config shi</h4></li>
 </ul>
 
 <h1><center> Styling </center></h1>
