@@ -28,6 +28,9 @@ tags:		[Ubuntu | Fedora | Arch/Antergos]
  <li><h4> PSensor </h4></li>
  <li><h4> R + Rstudio </h4></li>
  <li><h4> Git config shi</h4></li>
+ <li><h4>Tor</h4></li>
+ <li><h4>Emacs</h4></li>
+ <li><h4>TexLive + TexMaker</h4></li>
 </ul>
 
 <h1><center> Styling </center></h1>
@@ -37,3 +40,26 @@ tags:		[Ubuntu | Fedora | Arch/Antergos]
  <li><h4> Arc Darker</h4></li>
  <li><h4> Split Windows </h4></li>
 </ul>
+
+<h1><center> Gnome Extensions </center></h1>
+<br>
+<ul style="list-style-type:circle">
+ <li><h4> Freon </h4></li>
+ <li><h4> Dynamic Top Bar  </h4></li>
+ <li><h4> Dash to Dock </h4></li>
+ <li><h4>Netspeed</h4></li>
+ <li><h4>Volume Mixer</h4></li>
+</ul>
+
+<h1><center> Other </center></h1>
+<br>
+<ul style="list-style-type:circle">
+ <li><h4> Fedy </h4></li>
+ <li><h4> RPMFusion </h4></li>
+ <li><h4> Gnome Tweak Tools </h4></li>
+ <li><h4></h4></li>
+ <li><h4>Volume Mixer</h4></li>
+</ul>
+
+
+
