@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Transfer Ubuntu"
-subtitle:   "My installed software - and configurations
+subtitle:   "My installed software - and configurations"
 date:       2016-08-20
 author:     "Adam"
 header-img: "img/Bit_Rain.jpg"
