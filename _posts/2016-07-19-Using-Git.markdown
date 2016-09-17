@@ -100,9 +100,12 @@ If, however, you wish to do this from a terminal, you can do the following. Assu
 cd ~/yourdir/yourfolder
 git checkout -b master
 git remote add origin http://github.com/yourprofile/yourrepo.git
-git push --set upstream origin master
+git push -u origin <branch>
 
-# Or just 
+# Or..
+git push --set-upstream origin <branch>
+
+# Or..
 git push
 ```
 
