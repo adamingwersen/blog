@@ -81,6 +81,8 @@ It's a given if you're visiting in the summer and haven't already been.
 
 <center><img src="http://denstoredanske.dk/@api/deki/files/98018/=Christiania_indgang.jpg"></center>
 
+<font color = "red"> DISCLOSURE: The sale and distribution of marijuana at Christiania has, as of the 2nd of September, been cleared by the inhabitants in cooporation with the Danish police. Christiania is still visitable - and most certainly worth a visit </font>
+
 Christiania has roots in the 60's hippie-movement and was constructed as a free-city inside Copenhagen. Today it serves as one of Copenhagens main tourist attractions. However, many people still live here. In Christiania there are live concerts, arts-shops and of course booths where marijuana can be purchased very easily.
 
 
