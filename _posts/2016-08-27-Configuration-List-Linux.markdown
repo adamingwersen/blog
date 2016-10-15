@@ -30,7 +30,7 @@ Set "open tilda" to 1/2-button. Set <b>Tilda</b> to run on startup in Startup Ap
 
 <h3> Configure Gnome extensions: </h3>
 <ul style="list-style-type:circle">
- <li><h4> Alt tab lift first window  </h4></li>½
+ <li><h4> Alt tab lift first window  </h4></li>
  <li><h4> Applications menu </h4></li>
  <li><h4> Caffeine </h4></li>
  <li><h4> Dash to dock </h4></li>
@@ -62,7 +62,7 @@ sudo apt-get install paper-icon-theme && sudo apt-get install paper-gtk-theme &&
 
 <h3><center> Applications</center></h3>
 
-<h4> Text </h4>h4>
+<h4> Text </h4>
 ```.sh
 # Latex
 sudo apt-get install texlive-full
@@ -127,7 +127,8 @@ sudo apt-get update
 
 <h4> Python </h4>
 Make sure, that Python 3.5 is installed:
-```
+
+```.sh
 python3 --version
 sudo apt install python3-pip
 sudo pip3 install --upgrade pip
