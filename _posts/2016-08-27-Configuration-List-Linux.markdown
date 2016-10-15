@@ -125,6 +125,25 @@ sudo apt-get update
  sudo apt-get install mono-complete fsharp
 ```
 
+<h4> Python </h4>
+Make sure, that Python 3.5 is installed:
+```
+python3 --version
+sudo apt install python3-pip
+sudo pip3 install --upgrade pip
+pip3 install matplotlib pandas scikit-learn folium numpy jupyter seaborn ggplot d3py plotly csvkit sqlite3
+``` 
+
+<h4> Spotify </h4>
+```.sh
+sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D2C19886
+sudo apt-get update
+sudo apt-get install spotify-client
+```
+
+
+
 
 
 
